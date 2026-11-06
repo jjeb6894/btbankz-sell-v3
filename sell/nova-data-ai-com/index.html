@@ -1,1 +1,167 @@
-PLACEHOLDER
+<!doctype html>
+<html lang="nl"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Laat Nova Data &amp; AI vermelden · BTBankz</title>
+<meta name="robots" content="noindex,nofollow"/>
+<style>
+
+
+:root{--ink:#24272c;--body:#33373d;--muted:#6f747d;--line:#e2e5e9;--fill:#f5f6f8;--accent:#f6821f;--accent-h:#e2740b;--navy:#0f1f3d;--ok:#15803d}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--body);background:#fff;line-height:1.5}
+.hdr{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;border-bottom:1px solid var(--line);background:#fff}
+.bt{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--navy);font-weight:800;font-size:1.15rem;letter-spacing:-.02em}
+.bt svg{display:block}
+.sec{font-size:.78rem;color:var(--muted);font-weight:600}
+.shell{max-width:880px;margin:0 auto;padding:24px 18px 56px}
+h1{margin:0 0 8px;font-size:clamp(1.55rem,3.8vw,2.2rem);letter-spacing:-.035em;color:var(--ink);line-height:1.15}
+h1 em{font-style:normal;color:#b45d09}
+.lead{margin:0 0 16px;color:var(--muted)}
+.proof{display:inline-flex;align-items:center;gap:8px;margin:0 0 14px;padding:6px 10px;border-radius:999px;background:#eef7f2;color:#166534;font-size:.82rem;font-weight:600}
+.frame{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 14px 40px -24px rgba(15,23,42,.35)}
+.bar{display:flex;gap:6px;align-items:center;padding:8px 10px;background:#fafafa;border-bottom:1px solid var(--line)}
+.bar i{width:9px;height:9px;border-radius:50%;background:#f87171}.bar i:nth-child(2){background:#fbbf24}.bar i:nth-child(3){background:#34d399}
+.bar span{margin-left:6px;flex:1;font-size:.72rem;border:1px solid var(--line);border-radius:999px;padding:2px 8px;background:#fff;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.frame img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;background:#f5f6f8}
+@media(max-width:720px){
+  .frame{background:#f5f6f8}
+  .frame img{
+    aspect-ratio:auto;
+    height:auto;
+    max-height:none;
+    object-fit:contain;
+    object-position:top center;
+  }
+}
+.cfm{margin:14px 0;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;background:#fafafa}
+.cfm.ok{border-color:var(--accent);box-shadow:0 0 0 3px rgba(246,130,31,.12)}
+.cfm label{display:flex;gap:10px;align-items:flex-start;font-weight:700;color:var(--ink);cursor:pointer;min-height:44px}
+.cfm input{width:20px;height:20px;margin-top:2px;accent-color:var(--accent)}
+.cfm a{font-size:.8rem;color:#b45d09}
+.btn{display:inline-flex;align-items:center;justify-content:center;width:100%;min-height:50px;border:0;border-radius:12px;font-weight:800;font-size:1rem;cursor:pointer;font-family:inherit}
+.btn.p{background:var(--accent);color:#fff}.btn.p:hover:not(:disabled){background:var(--accent-h)}
+.btn.n{background:var(--navy);color:#fff;margin-top:8px}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+.note{text-align:center;font-size:.78rem;color:var(--muted);margin:8px 0 0}
+.status{min-height:1.1em;color:#b45309;font-weight:600;font-size:.88rem}
+.card{margin:22px 0;padding:16px;border:1px solid var(--line);border-radius:14px;background:#fff}
+.card h2{margin:0 0 10px;font-size:1.05rem;color:var(--ink)}
+.card ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.card li{padding-left:22px;position:relative;font-size:.92rem}
+.card li::before{content:"✓";position:absolute;left:0;color:var(--ok);font-weight:800}
+.comps p{margin:0;font-size:.92rem}
+.plans{display:grid;grid-template-columns:1.15fr .95fr;gap:12px}
+@media(max-width:720px){.plans{grid-template-columns:1fr}}
+.plan{border:1px solid var(--line);border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:8px}
+.plan.rec{border-color:rgba(246,130,31,.55);box-shadow:0 0 0 3px rgba(246,130,31,.1);background:#fffdf9}
+.tag{align-self:flex-start;font:700 10px ui-monospace,monospace;letter-spacing:.06em;text-transform:uppercase;background:#fdeada;color:#b45d09;padding:3px 8px;border-radius:999px}
+.price{font-size:1.45rem;font-weight:800;color:var(--ink)}.price small{font-size:.8rem;font-weight:600;color:var(--muted)}
+.dirs{background:var(--fill);border-radius:10px;padding:8px;font-size:.78rem}
+.chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
+.chip{background:#fff;border:1px solid var(--line);border-radius:999px;padding:2px 8px;font-size:.7rem;color:var(--muted)}
+.trust{display:grid;gap:6px;margin:0;padding:0;list-style:none;font-size:.82rem;color:var(--muted)}
+.trust li{padding-left:16px;position:relative}.trust li::before{content:"";position:absolute;left:0;top:.45em;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.faq details{border-top:1px solid var(--line);padding:10px 0}
+.faq details:first-child{border-top:0}
+.faq summary{cursor:pointer;font-weight:700;color:var(--ink)}
+.faq p{margin:8px 0 0;font-size:.9rem;color:var(--muted)}
+.foot{margin-top:28px;text-align:center;font-size:.75rem;color:#8b9098}
+
+
+</style>
+</head>
+<body data-slug="nova-data-ai-com">
+<header class="hdr">
+  <a class="bt" href="https://btbankz.com"><svg class="bt-mark" width="36" height="36" viewBox="0 0 64 64" role="img" aria-label="BTBankz" xmlns="http://www.w3.org/2000/svg"><path d="M12.5 21V9.5h17.5c8.2 0 13.4 4.6 13.4 11 0 4-2 7.1-5.1 8.9 4.6 1.6 7.6 5.6 7.6 10.8 0 7.6-5.6 13.3-14.6 13.3H12.5V43" fill="none" stroke="#0f1f3d" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><g transform="translate(27 32) scale(.84)"><path d="M2.2 -2.2 V-14.5 C9.6 -14.5 15 -9.4 15 -2.2 Z" transform="scale(1 1)" fill="#14b8a6" stroke="#14b8a6" stroke-width="3" stroke-linejoin="round"/><path d="M2.2 -2.2 V-14.5 C9.6 -14.5 15 -9.4 15 -2.2 Z" transform="scale(-1.08 1)" fill="#2f7bf6" stroke="#2f7bf6" stroke-width="3" stroke-linejoin="round"/><path d="M2.2 -2.2 V-14.5 C9.6 -14.5 15 -9.4 15 -2.2 Z" transform="scale(1 -1)" fill="#8b5cf6" stroke="#8b5cf6" stroke-width="3" stroke-linejoin="round"/><path d="M2.2 -2.2 V-14.5 C9.6 -14.5 15 -9.4 15 -2.2 Z" transform="scale(-1.08 -1)" fill="#f6821f" stroke="#f6821f" stroke-width="3" stroke-linejoin="round"/></g></svg>BTBankz</a>
+  <span class="sec">Veilige Stripe Checkout</span>
+</header>
+<main class="shell">
+  <h1>Laat <em>Nova Data &amp; AI</em> vermelden bij elke AI-gigant</h1>
+  <p class="lead">Eén aankoop zet <b>nova-data-ai.com</b> in ChatGPT, Claude, Perplexity, Gemini — plus zoekmachines en forums.</p>
+
+  <div class="frame">
+    <div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>nova-data-ai.com</span></div>
+    <img src="https://headless-bdnestfqvnt-citley-1406.wix-site-host.com/hero.jpg" alt="Homepagina van Nova Data &amp; AI" width="1280" height="800" fetchpriority="high"/>
+  </div>
+
+  <div class="cfm" id="cfm">
+    <label><input type="checkbox" id="ok"/> <span>Ja, <b>nova-data-ai.com</b> is mijn website</span></label>
+    <div><a href="mailto:sales@btbankz.com?subject=Niet%20mijn%20site%20nova-data-ai-com">Niet jouw site? Neem contact op</a></div>
+  </div>
+  <p class="status" id="st" role="status"></p>
+  <button class="btn p" id="pay1" type="button" disabled data-href="https://buy.stripe.com/5kQ9ASdpy6Vg3hlawEfQI03">Laat vermelden · Betaal $10</button>
+  <p class="note">Je koopt de vermelding voor <b>jouw eigen bedrijf</b> (nova-data-ai.com) · Stripe Checkout · Business Trend Bank Zen · ~€9</p>
+
+  <section class="card">
+    <h2>Wat je krijgt</h2>
+    <ul>
+      <li>Vermelding bij elke AI-gigant — ChatGPT, Claude, Perplexity, Gemini — plus zoekmachines en forums</li>
+      <li>We dienen je in bij 12 gratis directories (Google Business Profile, Bing Places, Apple Business Connect en meer)</li>
+      <li>Eenmalig $10 (ongeveer €9) — of Growth voor doorlopend directory-onderhoud en AI-antwoordmonitoring</li>
+    </ul>
+    <div class="dirs" style="margin-top:10px"><b>12 gratis directories</b><div class="chips"><span class="chip">Google Business Profile</span><span class="chip">Bing Places</span><span class="chip">Apple Business Connect</span><span class="chip">Foursquare Places</span><span class="chip">Facebook Business Page</span><span class="chip">Goudengids</span><span class="chip">Telefoongids</span><span class="chip">Hotfrog Nederland</span><span class="chip">+4 meer</span></div></div>
+  </section>
+
+  <section class="card comps">
+    <h2>Jouw concurrenten</h2>
+    <p>Bedrijven in Nederland die om dezelfde zoekopdrachten concurreren: <b>Xomnia, Cmotions, DataNorth AI</b>.</p>
+  </section>
+
+  <section class="plans" aria-label="Plannen">
+    <article class="plan rec" id="listing">
+      <span class="tag">Aanbevolen</span>
+      <h3 style="margin:0;color:var(--ink)">Overal vermelden</h3>
+      <div class="price">$10 <small>eenmalig · ~€9</small></div>
+      <ul style="list-style:none;padding:0;margin:0;display:grid;gap:6px;font-size:.88rem">
+        <li style="padding-left:18px;position:relative"><span style="position:absolute;left:0;color:var(--ok)">✓</span> AI-giganten + zoek + forums</li>
+        <li style="padding-left:18px;position:relative"><span style="position:absolute;left:0;color:var(--ok)">✓</span> 12 gratis directory-aanmeldingen</li>
+      </ul>
+      <button class="btn p" id="pay2" type="button" disabled data-href="https://buy.stripe.com/5kQ9ASdpy6Vg3hlawEfQI03">Laat vermelden · Betaal $10</button>
+    </article>
+    <article class="plan" id="growth">
+      <span class="tag">Optioneel</span>
+      <h3 style="margin:0;color:var(--ink)">Growth</h3>
+      <div class="price">$0.99 <small>vandaag · ~€0,90</small></div>
+      <p style="margin:0;font-size:.8rem;color:var(--muted)">Daarna maandelijks vanaf maand 2. Altijd opzegbaar.</p>
+      <ul style="list-style:none;padding:0;margin:0;display:grid;gap:6px;font-size:.88rem">
+        <li style="padding-left:18px;position:relative"><span style="position:absolute;left:0;color:var(--ok)">✓</span> Directory-onderhoud</li>
+        <li style="padding-left:18px;position:relative"><span style="position:absolute;left:0;color:var(--ok)">✓</span> AI-antwoordmonitoring</li>
+        <li style="padding-left:18px;position:relative"><span style="position:absolute;left:0;color:var(--ok)">✓</span> Nieuwe listings &amp; profielupdates</li>
+      </ul>
+      <button class="btn n" id="payg" type="button" disabled data-href="https://buy.stripe.com/00wfZg99ienI05934cfQI04">Start Growth · $0.99 vandaag</button>
+    </article>
+  </section>
+
+  <section class="card">
+    <h2>Voor je betaalt</h2>
+    <ul class="trust">
+      <li>Kaartgegevens blijven bij Stripe Checkout</li>
+      <li>Op je afschrift: Business Trend Bank Zen</li>
+      <li>Na betaling keer je terug en kun je optioneel een BTBankz-account aanmaken</li>
+    </ul>
+    <div class="faq" style="margin-top:12px">
+      <details><summary>Wat gebeurt er na betaling?</summary><p>Stripe bevestigt de betaling, daarna kom je op een bedankpagina. Daar kun je kiezen of je een BTBankz-account wilt. Wij starten de AI-vermelding en directory-aanmeldingen voor nova-data-ai.com.</p></details>
+      <details><summary>Is de $10 eenmalig?</summary><p>Ja. Overal vermelden is een eenmalige $10 (ongeveer €9). Growth is optioneel en kost $0.99 (ongeveer €0,90) vandaag, daarna maandelijks vanaf maand 2 — altijd opzegbaar.</p></details>
+      <details><summary>Garanderen jullie rankings of omzet?</summary><p>Nee. Wij zetten je in AI-antwoorden, zoekresultaten en gratis directories. Resultaten verschillen; wij beloven geen rankings of omzet.</p></details>
+      <details><summary>Verkeerde website?</summary><p>Betaal niet — gebruik “Niet jouw site? Neem contact op” en wij lossen het op.</p></details>
+    </div>
+  </section>
+
+  <button class="btn p" id="pay3" type="button" disabled data-href="https://buy.stripe.com/5kQ9ASdpy6Vg3hlawEfQI03">Laat vermelden · Betaal $10</button>
+  <p class="note">Zelfde Stripe Checkout · $10 voor nova-data-ai.com</p>
+  <footer class="foot">BTBankz · Business Trend Bank Zen · Prijzen vóór btw waar Stripe Tax geldt</footer>
+</main>
+<script>
+(function(){
+  const box=document.getElementById('ok'), cfm=document.getElementById('cfm'), st=document.getElementById('st');
+  const btns=[...document.querySelectorAll('button.btn')];
+  function sync(){const on=box.checked; cfm.classList.toggle('ok',on); btns.forEach(b=>b.disabled=!on); if(on) st.textContent='';}
+  box.addEventListener('change',sync); sync();
+  document.addEventListener('click',e=>{
+    const b=e.target.closest('button.btn'); if(!b) return; e.preventDefault();
+    if(!box.checked){st.textContent='Bevestig eerst dat dit jouw website is.'; cfm.scrollIntoView({behavior:'smooth',block:'center'}); return;}
+    const href=b.dataset.href+(b.dataset.href.includes('?')?'&':'?')+'client_reference_id=nova-data-ai-com--v3';
+    st.textContent='Veilige Stripe Checkout openen…'; location.href=href;
+  });
+})();
+</script>
+</body></html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="nl"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Bedankt · BTBankz</title>
+<meta name="robots" content="noindex,nofollow"/>
+<style>
+:root{--ink:#24272c;--body:#33373d;--muted:#6f747d;--line:#e2e5e9;--fill:#f5f6f8;--accent:#f6821f;--accent-h:#e2740b;--navy:#0f1f3d}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--body);background:#fff;line-height:1.5}
+.hdr{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;border-bottom:1px solid var(--line)}
+.bt{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--navy);font-weight:800;font-size:1.15rem}
+.shell{max-width:640px;margin:0 auto;padding:32px 18px 64px}
+h1{margin:0 0 10px;font-size:clamp(1.45rem,3.5vw,2rem);color:var(--ink);letter-spacing:-.03em;line-height:1.2}
+.lead{margin:0 0 18px;color:var(--muted)}
+.okbox{margin:0 0 22px;padding:14px 16px;border-radius:12px;background:#eef7f2;border:1px solid #bbf7d0;color:#166534;font-weight:600}
+.card{margin:0 0 18px;padding:18px;border:1px solid var(--line);border-radius:14px;background:var(--fill)}
+.card h2{margin:0 0 8px;font-size:1.1rem;color:var(--ink)}
+.card p{margin:0 0 12px;font-size:.95rem;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;width:100%;min-height:48px;border:0;border-radius:12px;font-weight:800;font-size:1rem;text-decoration:none;font-family:inherit}
+.btn.p{background:var(--accent);color:#fff}.btn.p:hover{background:var(--accent-h)}
+.btn.n{background:var(--navy);color:#fff;margin-top:8px}
+.btn.g{background:#fff;color:var(--ink);border:1px solid var(--line);margin-top:8px}
+.en{margin-top:18px;padding-top:14px;border-top:1px dashed var(--line);font-size:.88rem;color:var(--muted)}
+.foot{margin-top:28px;text-align:center;font-size:.75rem;color:#8b9098}
+.meta{font-size:.8rem;color:var(--muted);word-break:break-all}
+</style>
+</head>
+<body>
+<header class="hdr">
+  <a class="bt" href="https://btbankz.com">BTBankz</a>
+  <span style="font-size:.78rem;color:var(--muted);font-weight:600">Payment received</span>
+</header>
+<main class="shell">
+  <div class="okbox">✓ Bedankt — je betaling is ontvangen. / Payment received.</div>
+  <h1>We zetten je vermelding in gang</h1>
+  <p class="lead">Op je afschrift: <b>Business Trend Bank Zen</b>. Wij starten AI-vermelding en directory-aanmeldingen voor jouw bedrijf.</p>
+  <p class="meta" id="sid"></p>
+
+  <section class="card">
+    <h2>Wil je een BTBankz-account aanmaken?</h2>
+    <p>Optioneel — niet nodig om je aankoop te laten verwerken. Met een account volg je status, directories en Growth.</p>
+    <a class="btn p" href="https://btbankz.com/register">Ja, account aanmaken · Create account</a>
+    <a class="btn n" href="mailto:sales@btbankz.com?subject=Account%20after%20Stripe%20checkout">Mail sales@btbankz.com</a>
+    <a class="btn g" href="https://btbankz.com">Nee dank je · No thanks</a>
+    <div class="en"><b>English:</b> Want a BTBankz account after paying? Use the buttons above. Skipping is fine — we still process your listing. Statement descriptor: Business Trend Bank Zen.</div>
+  </section>
+
+  <footer class="foot">BTBankz · Business Trend Bank Zen</footer>
+</main>
+<script>
+(function(){
+  try{
+    var u=new URL(location.href);
+    var sid=u.searchParams.get('session_id');
+    if(sid) document.getElementById('sid').textContent='Checkout session: '+sid;
+  }catch(e){}
+})();
+</script>
+</body></html>

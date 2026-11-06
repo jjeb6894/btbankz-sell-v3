@@ -1,2 +1,7 @@
 # btbankz-sell-v3
-BTBankz v3 customer-ready sales pages (static)
+
+Static BTBankz sell pages.
+
+- Nova: `/sell/nova-data-ai-com/`
+- Thanks: `/sell/nova-data-ai-com/thanks/`
+- Stripe return: `/checkout/success/`
